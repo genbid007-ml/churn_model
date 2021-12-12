@@ -237,4 +237,10 @@ Now we need to create two secrets inside GitHub as HEROKU_API_TOKEN and HEROKU_A
 1. name: HEROKU_API_NAME |value: churngenbid
 2. name: HEROKU_API_TOKEN |value: Authorization token saved in the last step
 
+
+Git command add dev on main branch
+git checkout main
+git pull               # to update the state to the latest remote master state
+git merge dev      # to bring changes to local master from your develop branch
+git push origin main # push current HEAD to remote master branch
 </p>
