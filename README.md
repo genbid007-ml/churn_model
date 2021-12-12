@@ -198,5 +198,12 @@ Use `dvc push` to send your updates to remote storage.
 
 12. to open mlflow ui go to 127.0.0.1:9002
 
+13. Web app in flask
+This web app will be used to consume the created model. A user can enter the feature values into the form and after submitting, the model will predict the outcome(churn or not).
+Create a new folder named webapp and put the required HTML, CSS, and JavaScript codes inside the folder
+Now it’s time to create the python code related to the web app. Create app.py file in chrun_folder. The objective of this script is to send the response to the frontend after predicting the target using the request.
+
+
+
 
 </p>
