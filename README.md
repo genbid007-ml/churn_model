@@ -195,4 +195,8 @@ To enable auto staging, run:
         dvc config core.autostage true
 Use `dvc push` to send your updates to remote storage.
 
+
+12. to open mlflow ui go to 127.0.0.1:9002
+
+
 </p>
