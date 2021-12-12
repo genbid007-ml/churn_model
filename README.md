@@ -204,6 +204,30 @@ Create a new folder named webapp and put the required HTML, CSS, and JavaScript 
 Now it’s time to create the python code related to the web app. Create app.py file in chrun_folder. The objective of this script is to send the response to the frontend after predicting the target using the request.
 
 
+14. Unite test cases
+ Pytest will be used to do the simple testing. For that, create a separate folder named tests inside the main directory. Then create the test_config.py and __Init__.py files inside the newly created folder. Here a simple test will be performed to check whether the entered values are numerical or not. It will raise an exception if someone enters a string value instead of a numerical value. It is important to remember that the function name of all test cases must start with the test. After creating the unit tests we can test them by executing the below command. We can also do this as a frontend validation. But, here I did it in the backend just to show the unit tests capabilities of python. Here it checks whether the required error message is passed when entering incorrect values into the form. (Ex. adding one or more non-numerical values)
+
+run:
+pytest -v 
+
+15 Heroku Deployement
+Go to https://dashboard.heroku.com/apps
+* Click New and create a new app
+* Give a name for the app and create it (I named it churnmodelprod)
+* In the deployment method section, click Github.
+* In the connect to Github section, enter the repo name and search. It will find the repo name for you. Then click connect.
+* In the automatic deployed section, tick Wait for CI to pass before deploying and click enable the automatic deploy button.
+* Then go to account setting → application → Authorizations → create authorization.
+* Then enter the description in the box and click create.
+* Copy and save the authorization token for future use (We need this in the next step to create secrets).
+
+
+15. Create CI-CD pipeline using GitHub actions
+CI-CD pipeline will be created using the GitHub actions. 
+Create a new file inside the .github/workflows folder and named it as the ci-cd.yaml. 
+Please note that the file extension of this must be yaml.
+We can easily reflect the changes in the model or code through the frontend after implementing the CI-CD pipeline. Because we just need to push the code after doing the modifications and it will reflect the changes automatically. That is the advantage of using the CI-CD pipeline for ML model development. Because in ML context, there is a model retraining part that is not included in the normal software development life cycle(We will be discussing the retraining part in the 13th section). We can easily reflect the changes to the model with this approach.
+
 
 
 </p>
