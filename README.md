@@ -112,7 +112,7 @@ git add .dvc/config && git commit -m "Configure remote storage"
 
 
 
-4. greate new dev branch and switch for developement
+4. create new dev branch and switch for developement
 
 git checkout -b dev
 
@@ -132,10 +132,10 @@ mine is: 4/1AX4XfWgFYu1KCim5K-hkYCHp3p9Wmh78bVrjwTD8aWI6bUkoChxyaPY9tXM
 •	Find this credentials in the given path -
 .dvc >> temp >> gdrive-user-credentials.json
 •	Now to add the secrets in your github repo -
-o	Go to settings
+o	Go to settings in github
 o	secrets
 o	Click on add secrets
-o	Give name of secretes
+o	Give name of secretes like gdrive credentials
 o	Paste the json file content from gdrive-user-credentials.json
 
 

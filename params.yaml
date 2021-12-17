@@ -21,7 +21,7 @@ mlflow_config:
   remote_server_uri: http://127.0.0.1:9002
 
 random_forest:
-  max_depth: 20
+  max_depth: 30
   n_estimators: 30
   criterion: entropy
   max_features: sqrt
