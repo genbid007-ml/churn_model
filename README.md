@@ -1,7 +1,9 @@
 MLFlow_churnmodel
 ==============================
 
-This is a implementation of MLFlow and DVC on test basis, all iplementation derived from thro cookiecutter tempolaate 
+This is a implementation of MLFlow and DVC on test basis, all implementation derived from thro cookiecutter template
+part of my ML internship
+
 
 Project Organization
 ------------
@@ -76,6 +78,10 @@ git add . && git commit -m "first commit and added raw data"
 git branch -M main
 git remote set-url origin https://github.com/genbid007-ml/churn_model.git
 git push -u origin main
+
+
+git remote remove origin
+git remote remove github
 
 3. Install DVC for data versioning control with access to google drive:
 
